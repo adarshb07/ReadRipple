@@ -1,0 +1,33 @@
+.token-box{
+    border: 1px solid var(--primary-color);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    border-radius: 20px;
+    margin: 2rem 0;
+}
+
+.token-box i{
+    margin-top: 2rem;
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+.token-box h4{
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.token-box p{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.token-box  p span{
+    color: var(--primary-color);
+    font-family: var(--fjalla);
+    font-size: 2rem;    
+}

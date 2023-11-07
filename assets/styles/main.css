@@ -21,15 +21,28 @@
     --light-color: #ced6e0;
     --dark-color: #2f3542;
     --box-shadow: rgb(0 0 2 / 35%) 0px 20px 30px -10px;
+    --menu-color: #151515;
     --fjalla: 'Fjalla One', sans-serif;
     --railway: 'Raleway', sans-serif;
     --exo: 'Exo 2', sans-serif;
     --philosopher :'Philosopher', sans-serif;
 }
 
+::-moz-selection { /* Code for Firefox */
+    background: var(--primary-color);
+    color: white;
+  }
+  
+  ::selection {
+    background: var(--primary-color);
+    color: white;
+    border: 2px solid green;
+
+  }
+
 .wrapper{
     height: 100vh;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     scroll-behavior: smooth;
 }
 
@@ -229,10 +242,103 @@ nav .menu ul li:hover::after{
 
 /* Footer */
 
-footer .foot{
-    background-color: var(--black-color);
+footer{
+    margin-top: 5rem;
+}
+
+footer .foot-top{
+    background-color: #151515;
+    color: white;
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
+    padding: 3rem 5rem;
+    font-family: var(--exo);
+}
+
+footer .foot-top .logo-info{
+    padding: 20px;
+    width: 30%;
+}
+
+.footer .foot-top .logo-info .logo-container{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer .foot-top .logo-info .logo-container h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+footer .foot-top .logo-info .logo-container img{
+    height: 5rem;
+}
+
+footer .foot-top .logo-info p{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.foot-nav h4{
+    margin-top: 2rem;
+    font-size: 1.7rem;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.foot-nav h4::after{
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+}
+
+.foot-nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.foot-nav ul a{
+    color: white;
+    text-decoration: none;
+}
+
+.foot-nav ul a:hover{
+    color: var(--primary-color);
+}
+
+.foot-nav ul li:hover{
+    transform: translateX(10px);
+}
+
+.foot-nav .logo{
+    display:flex;
+    gap: 20px;
+}
+
+.foot-nav .logo a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.foot-nav .logo a:hover{
+    color: var(--primary-color);
+}
+
+footer .foot{
+    background-color: var(--black-color);
     padding: 20px;
 }
 
@@ -240,20 +346,13 @@ footer .foot p{
     color: rgba(255, 255, 255, 0.61);
     font-family: var(--exo);
     font-size: 1.2rem;
+    text-align: center;
 }
 
-footer .foot .logo{
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    font-family: var(--philosopher);
-    background: linear-gradient(to left,rgb(188, 12, 241), var(--primary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
-footer .foot .logo .icon{
-    font-size: 1.8rem;
-}
+
+
 
 /* Footer End */
+
+

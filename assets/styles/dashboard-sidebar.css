@@ -1,0 +1,72 @@
+.main-container{
+    display: flex;
+    font-family: var(--exo);
+    position: relative;;    
+}
+
+.main-container .left{
+    height: 100%;
+    width: 20%;
+    position: sticky !important; 
+    top: 10px;
+    left: 0;
+}
+
+.main-container .left .menu ul{
+    list-style: none;
+}
+
+.main-container .left .menu ul li{
+    padding: 15px 0 15px 3rem;
+    border-bottom: 1px solid var(--menu-color);
+}
+
+.main-container .left .menu ul li a{
+    display: flex;
+    text-decoration: none;
+    color: var(--menu-color);
+    gap: 2rem;
+}
+.main-container .left .menu ul li a:hover{
+    color: var(--primary-color);
+}
+
+.main-container .left .menu ul li a i{
+    font-size: 1.2rem;
+}
+
+.main-container .left .menu ul li .active{
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+.main-container .left .menu ul li button{
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    color: white;
+}
+
+.main-container .right{
+    width: 100%;
+    border-left:1px solid var(--menu-color) ;
+    padding: 40px 40px;
+}
+
+.main-container .right h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.main-container .right h3{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-left: 5px;
+}
+
+footer{
+    margin-top: -10px;
+}
+footer .foot{
+    margin-top: 0 !important;
+}

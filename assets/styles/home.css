@@ -358,7 +358,7 @@ header{
     margin: 0 auto;
 }
 .testi{
-    max-width: 1100px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -569,3 +569,83 @@ p > strong , p > b {
 /* Testimonial End Here */
 
 
+/* Feature Books  */
+
+.feature-book h2{
+    font-family: var(--exo);
+    font-size: 2.5rem;
+    text-align: left;
+    font-weight: 900;
+    position: relative;
+    margin: 5rem 0 3rem 4rem;
+}
+
+.feature-book h2::after{
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 4px;
+    background-color: var(--primary-color);
+    bottom: -15px;
+    left: 0;
+    border-radius: 30px;
+}
+
+.feature-book .all-books{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 4rem;
+    row-gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.feature-book .all-books .book{
+    width: 30%;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.351);
+}
+
+.feature-book .all-books .book:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.feature-book .all-books .book img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+
+.feature-book .all-books .book h3{
+    font-family: var(--exo);
+    font-size: 1.6rem;
+    margin-top: 0.8rem;
+    padding: 1rem 2rem 1rem 1.2rem;
+}
+
+.feature-book .all-books .book p{
+    padding: 1rem 2rem 1rem 1.2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.737);
+    text-align: justify;
+}
+
+.feature-book .all-books .book button{
+    display: block;
+    margin: 10px auto 30px;
+    background-color: var(--primary-color);
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: white;
+    border: 2px solid #2E2F35;
+    box-shadow: 3px 3px 0px 0px #2E2F35;   
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+/* Feature Book End Here */
