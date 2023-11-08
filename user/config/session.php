@@ -7,5 +7,5 @@
             ob_end_flush();
             die();
         }
-        redirect("../Dashboard/login.php");
+        redirect("../../login/");
     }

@@ -44,7 +44,8 @@ form{
     display: block;
     margin-bottom: 5px;
 }
-.field input{
+.field input,
+textarea{
     width: 100%;
     padding: 12px 10px;
     border-radius: 5px;

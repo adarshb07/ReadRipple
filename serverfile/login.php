@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require_once '../config/connection.php';
 
     $email = $_POST['email'];
@@ -15,6 +16,9 @@
         $verify = password_verify($password, $row['password']); 
         
         if($verify){
+            $_SESSION["user_status"] = "logged_in";
+            $_SESSION["user_id"] = $row['id'];
+            $_SESSION["userType"] = $row['userType'];
             echo "success";
         }
         else{
