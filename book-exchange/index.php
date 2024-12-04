@@ -14,6 +14,7 @@
 </head>
 <body>
     <?php
+        // test comment commit
         if (isset($_SESSION['success'])) {
             echo "<script>Swal.fire({icon: 'success', title: 'Success', text: '" . $_SESSION['success'] . "'})</script>";
             unset($_SESSION['success']);
